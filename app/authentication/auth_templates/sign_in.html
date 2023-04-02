@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url('../static/images/brandon-green-21jzeYnvZTY-unsplash.jpg');
+        background-position: 100%;
+        background-size: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 50;
+        
+    }
+</style>
+<main class="container p-5">
+    <div class="row">
+        <aside class="col-12 col-md-6">
+            <h2 class="text-light">Sign In</h2>    
+            {% include 'forms.html' %}
+        </aside>
+    </div>
+</main>
+{% endblock %}

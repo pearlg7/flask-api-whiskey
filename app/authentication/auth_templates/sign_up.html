@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url('../static/images/inspo-poGrt6fkKPo-unsplash.jpg');
+        background-position: 100%;
+        background-size: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 50;
+        
+    }
+</style>
+    <!-- Form content -->
+    <main class="container p-5">
+        <div class="row">
+            <aside class="col-12 col-md-6">
+                <h2 class="text-light">Create Your Account</h2>
+                {% include 'forms.html' %}
+            </aside>
+        </div>
+    </main>
+{% endblock %}
