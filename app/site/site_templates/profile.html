@@ -21,4 +21,12 @@
         </div>
     </div>
 </section>
+<section class="text-center p-5">
+    <div class="container p-5">
+        <ul class="list-group">
+            <li class="list-group-item bg-light text-dark">Email: {{ current_user.email }}</li>
+            <li class="list-group item bg-light text-dark">Token: {{ current_user.token }}</li>  
+        </ul>
+    </div>
+</section>
 {% endblock %}
