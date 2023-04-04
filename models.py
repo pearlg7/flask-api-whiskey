@@ -71,7 +71,7 @@ class Whiskey(db.Model):
 
 class WhiskeySchema(ma.Schema):
     class Meta:
-        fields = ['Id', 'Name','Style','Age']
+        fields = ['id', 'name','style','age', 'user_token']
 
 whiskey_schema = WhiskeySchema()
 whiskeys_schema = WhiskeySchema(many=True)

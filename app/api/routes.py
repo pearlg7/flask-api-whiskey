@@ -22,7 +22,7 @@ def create_whiskey(current_user_token):
     response = whiskey_schema.dump(whiskey)
     return jsonify(response)
 
-@api.route('/whikeys', methods = ['GET'])
+@api.route('/whiskeys', methods = ['GET'])
 @token_required
 def get_whiskey(current_user_token):
     a_user = current_user_token.token
